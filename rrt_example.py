@@ -175,10 +175,10 @@ def main():
     dir = "media"
     for f in os.listdir(dir):
         os.remove(os.path.join(dir, f))
-    imagePath = "world3.png"
+    imagePath = "world4.png"
     image1 = cv2.imread(imagePath, 0) # load grayscale maze image
     image2 = cv2.imread(imagePath) #load colored maze image
-    RRT_object= RRT_algorithm(image1, image2, start= (25, 30), end=(500, 100))
+    RRT_object= RRT_algorithm(image1, image2, start= (25, 30), end=(450, 300))
 
     if args.selectPoint:
         print("Select start and end points by double clicking, press 'escape' to exit")
